@@ -1,0 +1,24 @@
+.welcome {
+  @apply container mx-auto flex flex-col items-center justify-center h-screen bg-center bg-no-repeat bg-cover;
+}
+
+.welcome-modal {
+  @apply flex flex-col items-center justify-center w-3/5 text-center;
+  background: rgba(255, 252, 252, 0.88);
+  border: 2px solid #000000;
+  height: 80%;
+}
+
+.welcome-modal > h1 {
+  font-family: "Trajan Pro Bold";
+  font-size: larger;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-modal > h2 {
+  @apply not-italic font-normal;
+  font-family: "Montserrat";
+  font-size: medium;
+  margin-bottom: 0.5rem;
+}
