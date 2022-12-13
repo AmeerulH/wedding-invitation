@@ -56,8 +56,20 @@
   font-style: bold;
   font-weight: 800;
   font-size: xx-large;
+  margin: -0.5rem;
 }
 
 .itinerary__modal-items > h2 {
   font-family: "Montserrat";
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.itinerary__modal-items:nth-child(4) > h1,
+.itinerary__modal-items:nth-child(5) > h1 {
+  margin: 0;
+}
+
+.itinerary__modal-items:last-child > h2 {
+  margin-bottom: 0;
 }

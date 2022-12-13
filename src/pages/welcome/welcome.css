@@ -12,7 +12,7 @@
 .welcome-modal > h1 {
   font-family: "Trajan Pro Bold";
   font-size: larger;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
@@ -21,4 +21,15 @@
   font-family: "Montserrat";
   font-size: medium;
   margin-bottom: 0.5rem;
+}
+
+.welcome-modal > h3 {
+  font-family: "Trajan Pro";
+  font-size: small;
+  font-weight: 500;
+}
+
+.welcome__logo {
+  margin: 0.5rem 0 1rem 0;
+  height: 15rem;
 }
