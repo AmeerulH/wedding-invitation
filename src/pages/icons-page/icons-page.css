@@ -1,3 +1,20 @@
 .icons-page {
-  @apply container mx-auto flex flex-col items-center justify-center h-screen;
+  @apply container mx-auto flex flex-col items-center justify-center;
+  padding: 2rem 0;
+}
+
+.icons-page__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icons-page__container-gifts {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-page__container-gifts-text {
+  width: 80vw;
 }

@@ -1,0 +1,11 @@
+.save-the-date {
+  @apply container mx-auto flex flex-col items-center justify-center h-screen bg-center bg-no-repeat bg-cover;
+}
+
+.save-the-date__text-save {
+  margin: -2.2rem;
+}
+
+.save-the-date__text-date {
+  margin: -1.5rem;
+}

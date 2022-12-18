@@ -1,5 +1,4 @@
 import React from 'react'
-// import background1 from '../../../public/images/background1.svg'
 import logo from '../../assets/images/logo.svg'
 
 const Welcome = () => {
