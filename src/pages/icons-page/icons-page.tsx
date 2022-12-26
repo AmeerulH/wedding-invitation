@@ -10,8 +10,7 @@ import QR from '../../assets/images/qr.png'
 
 const IconsPage = () => {
   const [show_modal, setShowModal] = useState(false)
-  console.log(show_modal)
-
+  
   return (
     <div className='icons-page'>
       {show_modal && <Modal onClick={() => setShowModal(false)}>
