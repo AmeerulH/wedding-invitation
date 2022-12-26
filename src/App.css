@@ -7,9 +7,3 @@
     margin: 0 20rem;
   }
 }
-
-@media screen and (min-width: 1028px) {
-  .app {
-    margin: 0 40rem;
-  }
-}
