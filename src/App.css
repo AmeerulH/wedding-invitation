@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Trajan Pro Bold"),
-    url("./assets/fonts/TrajanPro-Bold.woff") format("woff");
+    url("./assets/fonts/TrajanPro-Bold.ttf") format("truetype");
 }
 
 @font-face {
