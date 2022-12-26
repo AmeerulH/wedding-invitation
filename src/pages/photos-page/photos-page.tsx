@@ -1,27 +1,32 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useEffect } from 'react'
+import Angry from '../../assets/images/angry.jpg';
 import ChicaBonita from '../../assets/images/chica-bonita.jpeg'
-import Engagement from '../../assets/images/engagement.jpeg'
+import Engagement from '../../assets/images/engagement.jpg'
+import EngagementSmile from '../../assets/images/engagement_smile.jpeg'
 import Hill from '../../assets/images/hill.jpeg'
 import Icn1 from '../../assets/images/icn-1.jpeg'
-import Icn2 from '../../assets/images/icn-2.jpeg'
 import Kool from '../../assets/images/kool.jpeg'
-import Wedding from '../../assets/images/wedding.jpg'
+import Mirror from '../../assets/images/mirror.jpg'
+import MumsWedding from '../../assets/images/mums_wedding.jpg'
+import NightsOfFrights from '../../assets/images/nights_of_frights.jpg'
+import Roller from '../../assets/images/roller.jpg';
+import Tea from '../../assets/images/tea.jpg'
 import Together from '../../assets/images/together.jpeg'
 import './photos-page.css'
 
 const PhotosPage = () => {
     useEffect(() => {
-        const track = document.getElementById("image-track");
+        const track = document.getElementById("image-track") as any;
 
-        const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+        const handleOnDown = (e: any)=> track.dataset.mouseDownAt = e.clientX;
 
-        const handleOnUp = () => {
+        const handleOnUp = (e: any) => {
             track.dataset.mouseDownAt = "0";
             track.dataset.prevPercentage = track.dataset.percentage;
         }
 
-        const handleOnMove = e => {
+        const handleOnMove = (e: any) => {
             if (track.dataset.mouseDownAt === "0") return;
 
             const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
@@ -43,19 +48,11 @@ const PhotosPage = () => {
                 }, { duration: 1200, fill: "forwards" });
             }
         }
-
-        /* -- Had to add extra lines for touch events -- */
-
         window.onmousedown = e => handleOnDown(e);
-
         window.ontouchstart = e => handleOnDown(e.touches[0]);
-
         window.onmouseup = e => handleOnUp(e);
-
         window.ontouchend = e => handleOnUp(e.touches[0]);
-
         window.onmousemove = e => handleOnMove(e);
-
         window.ontouchmove = e => handleOnMove(e.touches[0]);
     }, [])
 
@@ -67,12 +64,18 @@ const PhotosPage = () => {
                 data-aos-easing="ease-in-out"
                 data-aos-once="true"
             >
+                <img className="image" src={Roller} draggable="false" />
                 <img className="image" src={Engagement} draggable="false" />
+                <img className="image" src={EngagementSmile} draggable="false" />
                 <img className="image" src={Hill} draggable="false" />
+                <img className="image" src={Together} draggable="false" />
                 <img className="image" src={Kool} draggable="false" />
                 <img className="image" src={Icn1} draggable="false" />
-                <img className="image" src={Wedding} draggable="false" />
-                <img className="image" src={Together} draggable="false" />
+                <img className="image" src={Angry} draggable="false" />
+                <img className="image" src={Mirror} draggable="false" />
+                <img className="image" src={NightsOfFrights} draggable="false" />
+                <img className="image" src={Tea} draggable="false" />
+                <img className="image" src={MumsWedding} draggable="false" />
                 <img className="image" src={ChicaBonita} draggable="false" />
             </div>
         </div>

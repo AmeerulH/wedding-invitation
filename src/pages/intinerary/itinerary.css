@@ -57,3 +57,19 @@
 .itinerary__modal-items:last-child > h2 {
   @apply mb-0;
 }
+
+@media screen and (min-width: 1024px) {
+  .itinerary__modal {
+    height: auto;
+    padding: 7rem 1rem;
+    margin-top: 4rem;
+  }
+
+  .itinerary__modal-items > h2 {
+    font-size: large;
+  }
+
+  .itinerary__modal > img {
+    width: 14rem;
+  }
+}

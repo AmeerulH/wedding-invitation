@@ -1,6 +1,6 @@
 .icons-page {
   @apply container mx-auto flex flex-col items-center justify-center;
-  padding: 2rem 0 4rem;
+  padding: 0 0 4rem;
   background-color: white;
 }
 
@@ -13,5 +13,11 @@
 }
 
 .icons-page__container-gifts-text {
-  width: 80vw;
+  width: 20rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .icons-page__container-gifts-text {
+    width: 30rem;
+  }
 }

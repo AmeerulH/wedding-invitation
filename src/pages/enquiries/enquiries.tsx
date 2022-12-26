@@ -1,5 +1,6 @@
 import Text from '../../components/text'
 import { FaWhatsapp } from 'react-icons/fa'
+import { isMobile } from '../../utils/responsive'
 import './enquiries.css'
 
 const Enquiries = () => {
@@ -17,10 +18,10 @@ const Enquiries = () => {
         data-aos-easing="ease-in-out"
         data-aos-once="true"
       >
-        <Text className='enquiries__title' size='large' weight={700}>For any enquiries, contact:</Text>
+        <Text className='enquiries__title' size={isMobile() ? 'large' : 'xx-large'} weight={700}>For any enquiries, contact:</Text>
         {names_list.map((item, key) => 
             <div className="enquiries__container" key={key}>
-                <Text size='medium' weight={600}>{item.name}</Text>
+                <Text size={isMobile() ? 'medium' : 'x-large'} weight={600}>{item.name}</Text>
                 <a href={`https://wa.me/${item.number}`} target='_blank' rel="noreferrer">
                   <button className='enquiries__button'><FaWhatsapp style={{marginRight: '0.5rem'}}/>Whatsapp</button>
                 </a>
