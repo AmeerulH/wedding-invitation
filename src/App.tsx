@@ -1,22 +1,29 @@
-import React from 'react';
 import Welcome from './pages/welcome';
 import Intinerary from './pages/intinerary'
 import IconsPage from './pages/icons-page';
 import SaveTheDate from './pages/save-the-date';
-import './App.css';
 import Enquiries from './pages/enquiries';
 import Rsvp from './pages/rsvp';
+import ThankYou from './pages/thank-you';
+import PhotosPage from './pages/photos-page';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './App.css';
+
+AOS.init();
 
 function App() {
   return (
-    <React.Fragment>
+    <div className='app'>
       <Welcome />
       <Intinerary />
+      <PhotosPage />
       <IconsPage />
       <SaveTheDate />
       <Enquiries />
       <Rsvp />
-    </React.Fragment>
+      <ThankYou />
+    </div>
   );
 }
 

@@ -1,66 +1,17 @@
-import {ChangeEvent, useState} from 'react'
-import Text from '../../components/text'
+/* eslint-disable jsx-a11y/iframe-has-title */
 import './rsvp.css'
 
 const Rsvp = () => {
-    const [formData, setFormData] = useState({
-        guestName: '',
-        contact: '',
-        noOfAttendees: '',
-        namesOfAttendees: ''
-    });
-
-    const { guestName, contact, noOfAttendees, namesOfAttendees } = formData;
-
-    const updateFormData = (event: ChangeEvent<HTMLInputElement>) =>
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value
-    });
-
-  return (
-    <div className='rsvp'>
-        <div className='rsvp__container'>
-            <Text className='rsvp__title' family='Vidaloka' size='xxx-large' weight={500}>RSVP</Text>
-            <form className='rsvp__form'>
-                <input
-                    value={guestName}
-                    onChange={e => updateFormData(e)}
-                    placeholder='Name of Guest: '
-                    type='text'
-                    name='guestName'
-                    required
-                />
-                <input
-                    value={guestName}
-                    onChange={e => updateFormData(e)}
-                    placeholder='Contact Number: '
-                    type='text'
-                    name='contact'
-                    required
-                />
-                <input
-                    value={guestName}
-                    onChange={e => updateFormData(e)}
-                    placeholder='No. of Attendees:'
-                    type='text'
-                    name='noOfAttendees'
-                    required
-                />
-                <input
-                    className='rsvp__input-attendees'
-                    value={guestName}
-                    onChange={e => updateFormData(e)}
-                    placeholder='Names of Attendees: '
-                    type='text'
-                    name='namesOfAttendees'
-                    required
-                /> 
-                <button type="submit">Submit</button>
-            </form>
+    return (
+        <div className="rsvp"
+            data-aos='fade-in' 
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+        >
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSec60Eosgb70GvViaQnmGbL6RkYqcuI_REKWe3OFGxhJkihkw/viewform?embedded=true">Loading…</iframe>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Rsvp

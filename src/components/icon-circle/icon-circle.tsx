@@ -2,14 +2,17 @@ import React from 'react'
 import './icon-circle.css'
 
 type TIconCircleProps = {
-    icon: React.ReactNode;
+    icon?: React.ReactNode;
+    link?: string;
 }
 
 const IconCircle = (props: TIconCircleProps) => {
   return (
-    <div className='icon-circle'>
-        {props.icon}
-    </div>
+    <a href={props.link} target="_blank" rel="noreferrer">
+      <div className='icon-circle'>
+          {props.icon}
+      </div>
+    </a>
   )
 }
 

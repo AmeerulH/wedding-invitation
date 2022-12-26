@@ -1,31 +1,19 @@
 .itinerary {
-  @apply container mx-auto flex flex-col items-center justify-center text-center;
-  height: 100%;
-  padding: 1rem;
+  @apply container mx-auto flex flex-col items-center justify-center text-center h-full p-4;
+  background-color: white;
 }
 
-.itinerary__intro > h1 {
-  font-family: "Trajan Pro Bold";
-  font-size: larger;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+.itinerary__intro {
+  animation: appear 4s;
 }
 
-.itinerary__intro > h4 {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: small;
-  margin-bottom: 1rem;
+.itinerary__text {
+  @apply mb-2;
 }
 
-.itinerary__intro > h2 {
-  font-family: "Trajan Pro";
-  font-weight: 700;
-  font-size: medium;
-  text-align: center;
+.itinerary__text-names {
+  @apply mt-4 mb-8;
   letter-spacing: 0.02em;
-  color: #aa865b;
-  margin-bottom: 2rem;
 }
 
 .itinerary__modal {
@@ -38,38 +26,34 @@
 }
 
 .itinerary__modal > img {
-  width: 9.5rem;
+  @apply w-40;
 }
 
 .itinerary__flower-top {
-  position: absolute;
+  @apply absolute;
   top: 1.5rem;
 }
 
 .itinerary__flower-bottom {
-  position: absolute;
+  @apply absolute;
   bottom: 1.5rem;
 }
 
-.itinerary__modal-items > h1 {
-  font-family: "Carolyna";
-  font-style: bold;
-  font-weight: 800;
-  font-size: xx-large;
-  margin: -0.5rem;
+.itinerary__text-h1 {
+  @apply -m-2;
 }
 
 .itinerary__modal-items > h2 {
+  @apply mb-4;
   font-family: "Montserrat";
   font-size: small;
-  margin-bottom: 1rem;
 }
 
-.itinerary__modal-items:nth-child(4) > h1,
-.itinerary__modal-items:nth-child(5) > h1 {
-  margin: 0;
+.itinerary__modal-items:nth-child(4) > div,
+.itinerary__modal-items:nth-child(5) > div {
+  @apply m-0;
 }
 
 .itinerary__modal-items:last-child > h2 {
-  margin-bottom: 0;
+  @apply mb-0;
 }

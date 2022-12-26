@@ -1,6 +1,6 @@
-import React from 'react'
 import FlowerTop from '../../assets/images/flower-top.svg'
 import FlowerBottom from '../../assets/images/flower-bottom.svg'
+import Text from '../../components/text'
 
 const Itinerary = () => {
     const itinerary_array = [
@@ -13,18 +13,26 @@ const Itinerary = () => {
 
   return (
     <div className='itinerary'>
-        <div className="itinerary__intro">
-            <h1>ASSALAMUALAIKUM W.B.T</h1>
-            <h4>You are cordially invited to the wedding<br/>reception of </h4>
-            <h2>MUHAMMAD AMEEURL HADY<br/>BIN ZUL HADY<br/>&<br/>ZEBO KHAMRAEVA</h2>
+        <div className="itinerary__intro" data-aos='fade-in' 
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true" 
+          >
+            <Text className='itinerary__text' family='Trajan Pro Bold' size='larger' weight={700}>ASSALAMUALAIKUM W.B.T</Text>
+            <Text className='itinerary__text' size='small' weight={400}>You are cordially invited to the wedding<br/>reception of </Text>
+            <Text className='itinerary__text-names' color='#aa865b' family='Trajan Pro' size='medium' weight={700}>MUHAMMAD AMEEURL HADY<br/>BIN ZUL HADY<br/>&<br/>ZEBO KHAMRAEVA</Text>
         </div>
-        <div className="itinerary__modal">
+        <div className="itinerary__modal" data-aos='zoom-in' 
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+          >
             <img className='itinerary__flower-top' src={FlowerTop} alt='flower-top'/>
             <div className="itinerary__modal-container">
                 {itinerary_array.map((items, key) => {
                     return <div className='itinerary__modal-items' key={key}>
-                        <h1>{items.h1}</h1>
-                        <h2 dangerouslySetInnerHTML={{__html: items.h2}}/>
+                        <Text className='itinerary__text-h1' family='Carolyna' size='xx-large' weight={800}>{items.h1}</Text>
+                        <h2 dangerouslySetInnerHTML={{__html: items.h2}} />
                     </div>
                 })}
             </div>
