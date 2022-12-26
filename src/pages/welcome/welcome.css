@@ -1,5 +1,6 @@
 .welcome {
   @apply container mx-auto flex flex-col items-center justify-center h-screen bg-center bg-no-repeat bg-cover;
+  background-color: white;
 }
 
 .welcome__modal {
