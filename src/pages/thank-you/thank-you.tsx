@@ -11,7 +11,7 @@ const ThankYou = () => {
             data-aos-easing="ease-in-out"
             data-aos-once="true"
         >
-            <Text color='#AA865B' family='Carolyna' size={isMobile() ? '4rem': '7rem'}>Thank You!</Text>
+            <Text color='#AA865B' family='Carolyna' size={isMobile() ? '4rem': '5rem'}>Thank You!</Text>
         </div>
     </div>
   )

@@ -63,13 +63,13 @@
 
 @media screen and (min-width: 1024px) {
   .show-counter {
-    width: 30rem;
-    height: 7rem;
-    font-size: 2.5em;
+    width: 20rem;
+    height: 6rem;
+    font-size: 1.8em;
   }
 
   .show-counter .countdown > span {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 0.6rem;
   }
 }
