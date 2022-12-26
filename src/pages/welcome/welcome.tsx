@@ -10,7 +10,7 @@ const Welcome = () => {
           data-aos-easing="ease-in-out"
           data-aos-once="true"
         >
-        <Text family='Trajan Pro' size='small' weight={500}>THE WEDDING RECEPTION<br/>OF</Text>
+        <Text family='Trajan Pro Regular' size='small' weight={500}>THE WEDDING RECEPTION<br/>OF</Text>
         <img className="welcome__logo" src={logo} alt='logo'/>
         <Text className='welcome__text' family='Trajan Pro Bold' size='larger' weight={400}>AMEERUL & ZEBO</Text>
         <Text className='welcome__text' size='medium' weight={400}>11 February 2023<br/>12:00PM</Text>

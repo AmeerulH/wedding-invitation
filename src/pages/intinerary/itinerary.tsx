@@ -20,7 +20,7 @@ const Itinerary = () => {
           >
             <Text className='itinerary__text' family='Trajan Pro Bold' size='larger' weight={700}>ASSALAMUALAIKUM W.B.T</Text>
             <Text className='itinerary__text' size='small' weight={400}>You are cordially invited to the wedding<br/>reception of </Text>
-            <Text className='itinerary__text-names' color='#aa865b' family='Trajan Pro' size='medium' weight={700}>MUHAMMAD AMEEURL HADY<br/>BIN ZUL HADY<br/>&<br/>ZEBO KHAMRAEVA</Text>
+            <Text className='itinerary__text-names' color='#aa865b' family='Trajan Pro Regular' size='medium' weight={700}>MUHAMMAD AMEEURL HADY<br/>BIN ZUL HADY<br/>&<br/>ZEBO KHAMRAEVA</Text>
         </div>
         <div className="itinerary__modal" data-aos='zoom-in' 
             data-aos-duration="1000"
