@@ -16,7 +16,7 @@
 
 .welcome__logo {
   margin: 0.5rem 0 1rem 0;
-  @apply h-48;
+  height: 15rem;
 }
 
 @media screen and (min-width: 1024px) {

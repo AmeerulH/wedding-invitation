@@ -11,7 +11,7 @@
 }
 
 .itinerary__text-names {
-  @apply mt-4 mb-8;
+  @apply mt-4 mb-16;
   letter-spacing: 0.02em;
 }
 
