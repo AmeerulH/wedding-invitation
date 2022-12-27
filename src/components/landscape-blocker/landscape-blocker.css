@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 768px) {
+@media screen and (orientation: landscape) and (max-width: 926px) {
   .landscape-blocker {
     display: flex;
   }
