@@ -38,7 +38,7 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 926px) {
   .app {
     margin: 0 20rem;
   }
