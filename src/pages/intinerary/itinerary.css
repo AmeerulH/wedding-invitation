@@ -3,9 +3,6 @@
   background-color: white;
 }
 
-.itinerary__intro {
-}
-
 .itinerary__text {
   @apply mb-2;
 }
