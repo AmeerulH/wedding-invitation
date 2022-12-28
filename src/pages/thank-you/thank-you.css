@@ -1,3 +1,13 @@
 .thank-you {
   @apply bg-white container mx-auto flex flex-col items-center justify-center h-screen bg-center bg-no-repeat bg-cover;
 }
+
+.thank-you__text {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .thank-you__text {
+    padding: 0 10rem;
+  }
+}

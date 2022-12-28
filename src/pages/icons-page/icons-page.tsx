@@ -46,8 +46,8 @@ const IconsPage = () => {
           data-aos-once="true"
         >
             <IconCircle icon={<FaHashtag size={'3rem'}/>}/>
-            <Text size='larger' weight={800}>#FromAToZForever</Text>
-            <Text size='medium' weight={400}>Please tag us in your socials!<br/>Add #FromAToZForever</Text>
+            <Text size='larger' weight={800}>#AmeerulAndZebosWedding</Text>
+            <Text size='medium' weight={400}>Please tag us in your socials!<br/>Add #AmeerulAndZebosWedding</Text>
         </div>
         <div className='icons-page__container'
           data-aos='fade-left' 

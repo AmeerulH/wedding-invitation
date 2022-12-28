@@ -1,5 +1,9 @@
 .save-the-date {
-  @apply container mx-auto flex flex-col items-center justify-center h-screen bg-center bg-no-repeat bg-cover;
+  @apply container flex flex-col items-center justify-center mx-auto h-screen bg-center bg-no-repeat bg-cover;
+}
+
+.save-the-date__container {
+  @apply flex flex-col items-center justify-center;
 }
 
 .save-the-date__text-save {
@@ -8,4 +12,16 @@
 
 .save-the-date__text-date {
   @apply -m-6;
+}
+
+.save-the-date__button {
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  background-color: #aa865b;
+}
+
+.save-the-date__button:hover {
+  background-color: #d5af81;
 }
