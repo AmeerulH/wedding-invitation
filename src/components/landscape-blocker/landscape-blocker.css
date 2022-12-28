@@ -2,7 +2,7 @@
   background: #aa865b;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   left: 0;
   right: 0;
@@ -36,6 +36,9 @@
 }
 
 @media screen and (orientation: landscape) and (max-width: 926px) {
+  body {
+    background: #aa865b !important;
+  }
   .landscape-blocker {
     display: flex;
   }
