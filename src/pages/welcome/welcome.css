@@ -1,6 +1,5 @@
 .welcome {
-  @apply container mx-auto flex flex-col items-center justify-center h-screen bg-center bg-no-repeat bg-cover;
-  background-color: white;
+  @apply bg-white container mx-auto flex flex-col items-center justify-center h-screen bg-center bg-no-repeat bg-cover;
 }
 
 .welcome__modal {
@@ -15,12 +14,12 @@
 }
 
 .welcome__logo {
+  @apply h-56;
   margin: 0.5rem 0 1rem 0;
-  height: 15rem;
 }
 
 @media screen and (min-width: 1024px) {
   .welcome__logo {
-    height: 18rem;
+    @apply h-64;
   }
 }

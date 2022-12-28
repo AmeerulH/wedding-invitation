@@ -1,5 +1,4 @@
 import React from 'react'
-import './text.css'
 
 type TTextProps = {
     align?: string;

@@ -1,6 +1,9 @@
 .rsvp {
-  @apply container mx-auto flex flex-col items-center justify-center h-screen bg-center bg-no-repeat bg-cover;
-  background-color: white;
+  @apply bg-white container mx-auto flex flex-col items-center justify-center h-screen;
+}
+
+.rsvp__form {
+  @apply container mx-auto flex flex-col items-center justify-center h-screen;
 }
 
 iframe {

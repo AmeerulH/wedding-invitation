@@ -2,7 +2,7 @@ import './modal.css'
 
 type TModalProps = {
     children: React.ReactNode;
-    onClick: () => void;
+    onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
 const Modal = (props: TModalProps) => {

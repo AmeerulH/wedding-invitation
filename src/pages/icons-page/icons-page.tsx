@@ -4,16 +4,20 @@ import { FaGift, FaHashtag, FaWaze } from 'react-icons/fa'
 import { HiLocationMarker } from 'react-icons/hi'
 import IconCircle from '../../components/icon-circle'
 import Text from '../../components/text';
-import './icons-page.css'
 import Modal from '../../components/modal';
 import QR from '../../assets/images/qr.png'
+import './icons-page.css'
 
 const IconsPage = () => {
   const [show_modal, setShowModal] = useState(false)
   
   return (
     <div className='icons-page'>
-      {show_modal && <Modal onClick={() => setShowModal(false)}>
+      {show_modal && <Modal onClick={(e) => {
+        setShowModal(false);
+        e.stopPropagation(); 
+        document.body.style.overflow = "auto";
+      }}>
           <img style={{borderRadius: '1rem'}}src={QR} alt="qr" />
         </Modal>
       }
@@ -52,7 +56,12 @@ const IconsPage = () => {
           data-aos-once="true"
         >
             <div className="icons-page__container-gifts">
-              <IconCircle icon={<BiMoney size={'3rem'} onClick={() => setShowModal(true)}/>}/>
+              <IconCircle icon={<BiMoney size={'3rem'}/>} 
+                onClick={() => {
+                  setShowModal(true);
+                  document.body.style.overflow = "hidden"
+                }}
+              />
               <IconCircle icon={<FaGift size={'3rem'}/>}/>
             </div>
             <Text size='larger' weight={800}>MONEY GIFT | GIFT REGISTRY</Text>

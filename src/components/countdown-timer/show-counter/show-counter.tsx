@@ -10,13 +10,13 @@ type TShowCounterProps = {
 const ShowCounter = (props: TShowCounterProps) => {
   return (
     <div className="show-counter">
-        <DateTimeDisplay value={props.days} type={'Days'} isDanger={props.days <= 3} />
+        <DateTimeDisplay value={props.days} type={'Days'} is_danger={props.days <= 7} />
         <p>:</p>
-        <DateTimeDisplay value={props.hours} type={'Hours'} isDanger={false} />
+        <DateTimeDisplay value={props.hours} type={'Hours'} is_danger={props.days <= 7} />
         <p>:</p>
-        <DateTimeDisplay value={props.minutes} type={'Mins'} isDanger={false} />
+        <DateTimeDisplay value={props.minutes} type={'Mins'} is_danger={props.days <= 7} />
         <p>:</p>
-        <DateTimeDisplay value={props.seconds} type={'Seconds'} isDanger={false} />
+        <DateTimeDisplay value={props.seconds} type={'Seconds'} is_danger={props.days <= 7} />
     </div>
   );
 };

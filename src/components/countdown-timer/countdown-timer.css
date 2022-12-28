@@ -1,50 +1,28 @@
-.expired-notice {
-  text-align: center;
-  padding: 2rem;
-  border: 1px solid #ebebeb;
-  border-radius: 0.25rem;
-  margin: 0.5rem;
-}
-
-.expired-notice > span {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: red;
-}
-
-.expired-notice > p {
-  font-size: 1.5rem;
+.countdown__expired {
+  @apply text-center mt-4;
+  background-color: #f0ebe7;
+  border-top: 2px solid #c09a45;
+  border-bottom: 2px solid #c09a45;
+  padding: 0.5rem 1rem;
 }
 
 .show-counter {
-  padding: 0.5rem;
+  @apply p-2;
 }
 
 .show-counter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  @apply flex flex-row justify-center items-center font-bold text-xl leading-7 rounded no-underline mt-4;
   padding: 1rem 0.5rem;
   border: 1px solid #ebebeb;
-  border-radius: 0.25rem;
-  text-decoration: none;
   color: #7f6544;
   background-color: #f0ebe7;
-  margin-top: 1rem;
   border-top: 2px solid #c09a45;
   border-bottom: 2px solid #c09a45;
 }
 
 .show-counter .countdown {
-  line-height: 1.25rem;
+  @apply leading-5 items-center flex flex-col;
   padding: 0 0.75rem 0 0.75rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .show-counter .countdown.danger {
@@ -52,7 +30,7 @@
 }
 
 .show-counter .countdown > p {
-  margin: 0;
+  @apply m-0;
 }
 
 .show-counter .countdown > span {
