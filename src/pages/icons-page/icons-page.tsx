@@ -62,7 +62,9 @@ const IconsPage = () => {
                   document.body.style.overflow = "hidden"
                 }}
               />
-              <IconCircle icon={<FaGift size={'3rem'}/>}/>
+              <IconCircle icon={<FaGift size={'3rem'}/>}
+                link='https://docs.google.com/spreadsheets/d/1r_YZCrzb0tXgs0kQ3Kl3StYZaj4UINBXvcjA_NNiniM/edit?usp=sharing'
+              />
             </div>
             <Text size='larger' weight={800}>MONEY GIFT | GIFT REGISTRY</Text>
             <Text className='icons-page__container-gifts-text' size='medium' weight={400}>Your presence at our wedding is the greatest gift of all. However, if you wish to honour us with a gift, either a cash gift or an item from our registry list would be very welcome.</Text>
