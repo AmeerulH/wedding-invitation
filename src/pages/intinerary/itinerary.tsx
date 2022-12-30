@@ -7,7 +7,7 @@ const Itinerary = () => {
     const itinerary_array = [
         {h1: 'Date', h2: 'Saturday, 11<sup>th</sup> February 2023'},
         {h1: 'Time', h2: '12:00PM - 3:30PM'},
-        {h1: 'Venue', h2: 'BoraOmbak Marina Putrajaya<br/>(Glass Suites)'},
+        {h1: 'Venue', h2: 'The Glass Suite<br/>BoraOmbak Marina Putrajaya'},
         {h1: 'Dress Code', h2: 'Traditional / Batik / Smart Casual'},
         {h1: 'Programme', h2: 'Arrival of Guests<br/>Open Buffet<br/>Arrival of Bride & Groom<br/>Blessing of Couple<br/>Bride & Groom Game<br/>Free & Easy'},
     ]

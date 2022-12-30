@@ -14,7 +14,7 @@ const Welcome = () => {
         <Text family='Trajan Pro Regular' size={isMobile() ? 'small' : 'large'} weight={500}>THE WEDDING RECEPTION<br/>OF</Text>
         <img className="welcome__logo" src={logo} alt='logo'/>
         <Text className='welcome__text' family='Trajan Pro Bold' size={isMobile() ? 'larger' : 'x-large'} weight={400}>AMEERUL & ZEBO</Text>
-        <Text className='welcome__text' family='Trajan Pro Regular' size={isMobile() ? 'medium' : 'large'} weight={400}>11 February 2023<br/>12:00PM</Text>
+        <Text className='welcome__text' family='Trajan Pro Regular' size={isMobile() ? 'medium' : 'large'} weight={400}>11 February 2023<br/>12:00PM - 3:30PM</Text>
         <Text className='welcome__text' family='Trajan Pro Regular' size={isMobile() ? 'medium' : 'large'} weight={400}>The Glass Suite,<br/>BoraOmbak Marina,<br/>Putrajaya</Text>
       </div>
     </div>
