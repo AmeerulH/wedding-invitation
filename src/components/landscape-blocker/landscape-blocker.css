@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 926px) {
+@media screen and (min-aspect-ratio: 13/9) and (max-width: 926px) {
   body {
     background: #aa865b !important;
     overflow: hidden;
